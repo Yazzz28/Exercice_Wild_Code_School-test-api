@@ -8,19 +8,40 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div class="uk-container">
-			<div class="uk-card uk-card-body">
-				<div class="uk-card-badge uk-label">test</div>
-				<h3 class="uk-card-title">pokemon</h3>
-				<div id="name">test</div>
+		<div class="uk-card" uk-card-default>
+			<div class="uk-card-header">
+				<h3 class="uk-card-title">Metamorph</h3>
+			</div>
+			<div class="uk-card-body">
+				<div></div>
+
+			</div>
+			<div class="uk-card-footer"></div>
+		</div>
+
+		<div class="uk-card uk-card-default uk-width-1-2@m">
+			<div class="uk-card-header">
+				<div class="uk-grid-small uk-flex-middle" uk-grid>
+					<div class="uk-width-auto">
+						<img class="uk-border-circle" id="image" width="40" height="40" src="images/avatar.jpg" alt="Avatar">
+					</div>
+					<div class="uk-width-expand">
+						<h3 id="name" class="uk-card-title uk-margin-remove-bottom"></h3>
+						<p class="uk-text-meta uk-margin-remove-top">
+							<time datetime="2016-04-01T19:00">April 01, 2016</time>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="uk-card-body">
 				<div id="id"></div>
 				<div id="height"></div>
 				<div id="weight"></div>
 				<div id="type"></div>
-				<img id="image" src="" alt="" srcset="">
 			</div>
 		</div>
 
+        <ul id="list"></ul>
 		<script src="script.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>

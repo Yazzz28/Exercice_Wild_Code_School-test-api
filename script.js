@@ -11,3 +11,14 @@ fetch("https://pokeapi.co/api/v2/pokemon/ditto")
     document.getElementById("image").alt = data.name;
 })
 .catch(err => console.log(err));
+
+fetch("https://pokeapi.co/api/v2/pokemon-species/")
+.then(response => response.json())
+.then(data => {
+    for (let i = 0; i < data.results.length; i++) {
+        let li = document.createElement("li");
+        li.innerHTML = data.results[i].name;
+        document.getElementById("list").appendChild(li);
+    }
+}
+)
